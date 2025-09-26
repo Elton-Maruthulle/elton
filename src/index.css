@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* helpers & custom shapes */
+html, body, #root { height: 100%; }
+* { box-sizing: border-box; }
+
+.resume-shell { max-width: 1100px; }
+.avatar-border { box-shadow: inset 0 8px 18px rgba(0,0,0,0.04); }
+
+/* Thought bubble shape using pseudo-element on .thought */
+.thought {
+  position: relative;
+  border-radius: 28px;
+}
+.thought::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: inherit;
+  bottom: -14px;
+  left: 24px;
+  transform: rotate(45deg);
+  border-radius: 6px;
+}
+
+/* Decorative sparkle */
+.sparkle {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+}
+
+/* responsive fine tuning */
+@media (max-width: 768px) {
+  .resume-shell { margin: 0 12px; }
+  .avatar-border { width: 160px; height: 160px; }
+  .banner-text { font-size: 1.6rem; }
+}
+
+/* Projects tweaks */
+.project-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* subtle glow used on hover via Tailwind utility, but set fallback */
+.project-glow {
+  box-shadow: 0 10px 30px rgba(163, 103, 174, 0.12);
+}
