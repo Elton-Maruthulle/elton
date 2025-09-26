@@ -48,8 +48,8 @@ export default function Banner() {
 
         {/* Special Download Button */}
         <a
-          href="/Elton_CV.pdf"
-          download
+          href="/assets/elton-maruthulle-cv.pdf"               // points to public/assets/cv.pdf
+          download="Elton_Maruthulle_CV.pdf" // file will download with this name
           className="px-4 py-2 rounded-lg font-semibold bg-gradient-to-r from-[#fffa7e] to-[#ffd36a] text-[#4a3863] shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300 flex items-center gap-2"
         >
           ⬇ Download CV
