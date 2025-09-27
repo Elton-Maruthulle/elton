@@ -47,3 +47,9 @@ html, body, #root { height: 100%; }
 .project-glow {
   box-shadow: 0 10px 30px rgba(163, 103, 174, 0.12);
 }
+
+/* Soft glow effect for bubbles */
+.bubble {
+  filter: blur(1px);
+  mix-blend-mode: screen;
+}
