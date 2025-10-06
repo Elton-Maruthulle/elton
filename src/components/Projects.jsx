@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import img1 from '../assets/HotelApp.jpeg';
 import img2 from '../assets/unidev.jpeg';
 import img3 from '../assets/ChatApp.png';
+import img4 from '../assets/studenthelpapp.png';
 import demo3 from '../assets/demo.mp4';
 
 const projects = [
@@ -34,6 +35,15 @@ const projects = [
     img: img2,
     viewLink: "https://unisadevsociety.github.io/site/",
     codeLink: "https://github.com/unisadevsociety/site",
+  },
+  {
+    id: 4,
+    title: "Student Helper",
+    desc: "A simple full-stack test project showcasing API integration, authentication, and frontend-backend interaction.",
+    tech: ["React", "Node.js", "Express", "Tailwind CSS", "JavaScript", "Cloudinary"],
+    img: img4,
+    viewLink: "https://elton-maruthulle.github.io/test/",
+    codeLink: "https://github.com/Elton-Maruthulle/test",
   },
   
 ];
